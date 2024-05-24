@@ -8,7 +8,7 @@ certainly does not work under Windows.
 
 
 
-Installing pyspim
+Installing pyspimdbg
 =====================
 
 First install the requirements:
@@ -21,27 +21,14 @@ First install the requirements:
 
 Then, install pyspim itself:
 
-    git clone git@github.com:yosinski/pyspim.git
+    git clone git@github.com:Gabrain24/pyspimdbg.git
     cd pyspim/
-    sudo python setup.py install
+    ./install_test.sh
 
 
 
 Example Usage
 =====================
-
-Quick demo
----------------------
-
-For a quick demo, run ```pyspim.py``` directly:
-
-    python pyspim.py
-
-This should print something like the following:
-
-    t0 is 123
-    (should be 123)
-    done.
 
 Basic Usage
 ---------------------
@@ -57,19 +44,23 @@ The basic commands for interacting with SPIM to load and run the included [```te
     spim.quit()                     # Quit the underlying spim process
 
 
-Using pyspim to automate grading
+Debugging
 ---------------------
-
-See [```examples/gradeMipsSubmission.py```](https://github.com/yosinski/pyspim/blob/master/examples/gradeMipsSubmission.py) and [```examples/gradeAll.sh```](https://github.com/yosinski/pyspim/blob/master/examples/gradeAll.sh) for examples of how to use pyspim to automate grading of simple MIPS programs.
+This version attempts to provide a simple interface to SPIM's debugging
+Run using ```pyspimdbg <filename>```
+Commands:
+- ```run``` - Run the program (alias: ```r```)
+- ```step``` - Step through the program (alias: ```s```)
+- ```quit``` - Quit the debugger (alias: ```q```)
+- ```break``` - Set a breakpoint at a line number (alias: ```b```)
+and all the basic spim commands
 
 
 
 License
 =======================
 
-Pyspim is released under the [GNU GPL v3](http://www.gnu.org/licenses/gpl.txt).
+Pyspimdbg is released under the [GNU GPL v3](http://www.gnu.org/licenses/gpl.txt).
 
 
-
-
-![-](http://s.yosinski.com/1px_pyspim.png)
+This is a fork of the original [pyspim](https://github.com/yosinski/pyspim)
