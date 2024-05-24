@@ -1,10 +1,9 @@
-About pyspim
+About pyspimdbg
 =====================
 
-[pyspim](https://github.com/yosinski/pyspim) is a very minimal Python
-interface to [SPIM](http://sourceforge.net/projects/spimsimulator/), a
-MIPS32 simulator. Pyspim is known to work on Linux and Mac. It almost
-certainly does not work under Windows.
+[pyspimdbg](https://github.com/Gabrain24/pyspimdbg) is a very minimal Python
+interface to [SPIM](http://sourceforge.net/projects/spimsimulator/), so as to make
+MIPS32 debugging easier. Pyspimdbg is known to work on Linux.
 
 
 
@@ -23,7 +22,7 @@ Then, install pyspim itself:
 
     git clone git@github.com:Gabrain24/pyspimdbg.git
     cd pyspim/
-    ./install_test.sh
+    ./install.sh
 
 
 
