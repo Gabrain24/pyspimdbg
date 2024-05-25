@@ -7,7 +7,7 @@ from setuptools import setup
 
 setup(
     name='pyspimdbg',
-    version='0.1',
+    version='0.2',
     url='https://github.com/Gabrain24/pyspimdbg',
     author='Gabrain24', # (forked from pyspim by Jason Yosinski)'
     py_modules=['pyspimdbg'],

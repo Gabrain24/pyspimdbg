@@ -2,3 +2,7 @@ build
 _pycache_
 examples
 env
+build_instructions.txt
+install.sh
+dist
+pyspimdbg.egg-info
