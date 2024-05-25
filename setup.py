@@ -9,16 +9,18 @@ setup(
     name='pyspimdbg',
     version='0.1',
     url='https://github.com/Gabrain24/pyspimdbg',
-    author='Gabrain24 (forked from pyspim by Jason Yosinski)',
+    author='Gabrain24', # (forked from pyspim by Jason Yosinski)'
     py_modules=['pyspimdbg'],
     install_requires=[
-        'pexpect',  # Add your dependencies here
+        'pexpect',
     ],
     entry_points={
         'console_scripts': [
             'pyspimdbg=pyspimdbg:main',
         ],
     },
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
 )
 
 print('Looking for dependency: spim...', end='')
